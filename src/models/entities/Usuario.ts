@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, Column, PrimaryGeneratedColumn} from "typeorm";
+import { Entity, PrimaryColumn, Column, PrimaryGeneratedColumn} from "typeorm"
 
 @Entity()
 class Usuario {
@@ -16,8 +16,8 @@ class Usuario {
     idade: number;
 
     @Column('decimal', { precision: 5, scale: 5 })
-    geolocation: number
+    geolocation: number;
     
 }
 
-export default Usuario
+export default Usuario;

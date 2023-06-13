@@ -7,6 +7,6 @@ const app: Express = express();
 
 AppDataSource.initialize().then(() => console.log("Banco inicializado"))
 
-app.use('/app/produtos', usuarioRouter);
+app.use('/', usuarioRouter);
 
 app.listen(38000, () => console.log("Iniciando"));
