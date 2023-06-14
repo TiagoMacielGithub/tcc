@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+#tudo{
+    margin: 9rem 2rem 2rem 2rem;
+}
+#back{
+    background-color: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    z-index: -1;
+}

@@ -1,0 +1,62 @@
+@media (max-width:425px ){
+    #logo{
+        width: 5rem;
+    }
+    #com{
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+    }
+    #cadatrar a{
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .info{
+        width: 20rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    #entr{
+        margin-top: 1rem;
+        width: 13rem;
+        height: 3rem;
+        font-size: 2rem;
+        }
+    #goo{
+        width: 13rem;
+        height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #goo_m{
+        margin-top: 0.5rem;
+        width: 2rem;
+        float: left;
+    }
+    #goo p{
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #face{
+        width: 13rem;
+        height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #face_m{
+        margin-top: 0.5rem;
+        width: 2rem;
+        float: left;
+    }
+    #face p{
+        margin-top: 0.7rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    #sobre{
+        font-size: 1rem;
+        position: relative;
+        top: 5rem;
+    }
+}

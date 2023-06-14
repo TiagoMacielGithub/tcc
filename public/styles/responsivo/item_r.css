@@ -1,0 +1,27 @@
+@media (max-width:425px ){
+    #card_p {
+       width: 100rem;
+    }
+    .card {
+        width: 20rem;
+        box-shadow: 0px;
+    }
+    #card_p {
+        display:block;
+    }
+    .card img{
+        width: 10rem;
+        margin: 0 auto;
+    }
+    .card h1 {
+        text-align: center;
+    }
+    #back{
+        width: 100vw;
+        height: 300vh;
+        position: absolute;
+        top: 0vw;
+        z-index: -1;
+    }
+}   
+

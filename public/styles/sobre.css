@@ -1,0 +1,16 @@
+section p{
+    color: #3D50B6;
+    padding-top: 2rem;
+    width: 45vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+p strong{
+    font-size: 4rem;
+}
+#fiec{
+    width: 13rem;
+    position: relative;
+    top: 13rem;
+}

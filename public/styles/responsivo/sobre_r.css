@@ -1,0 +1,19 @@
+@media (max-width:425px ){
+    section p{
+        color: #3D50B6;
+        padding-top: 2rem;
+        width: 70vw;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    p strong{
+        font-size: 3rem;
+    }
+    #fiec{
+        position: relative;
+        top: 9rem;
+        right: 2rem;
+        width: 7rem;
+    }
+}

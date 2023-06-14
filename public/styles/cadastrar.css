@@ -1,0 +1,31 @@
+#info_p{
+    padding: 0 32vw;
+}
+.info{
+    width: 30vw;
+    height: 3rem;
+    background-color: #979FC8;
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+}
+#info_p label{
+    font-size: 1.5rem;
+}
+.info::placeholder{
+    color: #F3F3EA;
+}
+#buto{
+    text-align: center;
+}
+#cadastrar{
+    margin-top: 2rem;
+    background-color: #3D50B6;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: #f3f3ea;
+    border: 0;
+}
