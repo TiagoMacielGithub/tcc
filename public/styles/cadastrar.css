@@ -1,4 +1,4 @@
-#info_p{
+#meuForm{
     padding: 0 32vw;
 }
 .info{
@@ -10,7 +10,7 @@
     border-radius: 2rem;
     padding-left: 1rem;
 }
-#info_p label{
+#meuForm label{
     font-size: 1.5rem;
 }
 .info::placeholder{

@@ -3,7 +3,7 @@ import { Entity, PrimaryColumn, Column, PrimaryGeneratedColumn} from "typeorm"
 @Entity()
 class Usuario {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     id: string;
 
     @Column({nullable: true})
@@ -15,8 +15,14 @@ class Usuario {
     @Column({nullable: true})
     idade: number;
 
-    @Column('decimal', { precision: 5, scale: 5 })
-    geolocation: number;
+    @Column('decimal', { precision: 10, scale: 5 })
+    latitude: number;
+    
+    @Column('decimal', { precision: 10, scale: 5 })
+    longitude: number;
+
+    @Column({nullable: true})
+    telefone: number;
     
 }
 

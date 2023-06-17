@@ -22,13 +22,13 @@
         <div class="offcanvas-body">
             <a href="home.html" class="hunb"><div class="st"> Home </div></a>
             <a href="sobre.html" class="hunb"><div class="st"> Sobre </div> </a>
-            <a href="item.html" class="hunb"><div class="st"> item </div> </a>
+            <a href="usuario.html" class="hunb"><div class="st"> usuario </div> </a>
             <a href="cadastrar.html" class="hunb"><div class="st"> Formulario </div> </a>
         </div>
     </div>
     <div id="back">
         <section id="tudo">
-            <form action="" id="info_p">
+            <form action="" id="meuForm">
                 <label for="">Nome:</label>
                 <div>
                     <input type="text" class="info" id="nome" name="nome" placeholder="Digite aqui...">
@@ -49,9 +49,9 @@
                     <input type="password" class="info" placeholder="Digite aqui...">
                     <small id="Error" style="display: none;">Senha Incoreta</small>
                 </div>
-                <label for="">Numaro:</label>
+                <label for="">Telefone:</label>
                 <div>
-                    <input type="text" class="info" id="numero" name="numero" placeholder="Digite aqui...">
+                    <input type="text" class="info" id="telefone" name="telefone" placeholder="Digite aqui...">
                     <small id="Error" style="display: none;">Numero errado</small>
                 </div>
                 <div id="buto">
@@ -59,37 +59,37 @@
                 </div>
             </form>
             <script>
-                const meuFrom = document.getElementById('info_p');
+                const meuForm = document.getElementById('meuForm');
                 const EError = document.getElementById('Error');
                 const urlParams = new URLSearchParams(window.location.search);
                 const id = urlParams.get('id');
 
-                meuFrom.addEventListener('submit', ev =>{
+                meuForm.addEventListener('submit', ev =>{ console.log(ev)
                     ev.preventDefault();
                     const formData = new FormData(meuForm);
-                    const item = {};
+                    const usuario = {};
 
-                    formData.forEach((valor, atributo) = item[atributo]= valor);
-                    if (item.nome.length < 5) {
+                    formData.forEach((valor, atributo) => usuario[atributo]= valor);
+                    if (usuario.nome.length < 5) {
                         console.log('ouve um erro')
                         EError.style= {  display: 'block', color: 'red' }
                         return;
                     }
                 })
-                function criarItem(){
+                function criarUsuario(){
                     if (id){
-                        fetch('http://localhost:38000/app/Item/'+ id)
+                        fetch('http://localhost:39000/'+ id)
                         .then(i=> i.json())
                         .then(i => {
                             console.log(i)
-                            document.getElementById("nome").value = item.nome
-                            document.getElementById("email").value = item.email
-                            document.getElementById("senha").value = item.senha
-                            document.getElementById("numero").value = item.numero
+                            document.getElementById("nome").value = usuario.nome
+                            document.getElementById("email").value = usuario.email
+                            document.getElementById("senha").value = usuario.senha
+                            document.getElementById("numero").value = usuario.numero
                         })
                     } 
                 }
-                criarItem();
+                criarUsuario();
             </script>
         </section>  
     </div>

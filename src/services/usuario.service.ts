@@ -22,7 +22,9 @@ class UsuarioService {
         usuario.nome = dto.nome
         usuario.usuario = dto.usuario
         usuario.idade = dto.idade
-        usuario.geolocation = dto.geolocation
+        usuario.latitude = dto.latitude
+        usuario.longitude = dto.longitude
+        usuario.telefone = dto.telefone
         usuario.id = v4();
             return await UsuarioRepositorio.save(usuario)
         } catch(err) {
@@ -52,7 +54,9 @@ class UsuarioService {
             usuario.nome = dto.nome
             usuario.usuario = dto.usuario
             usuario.idade = dto.idade
-            usuario.geolocation = dto.geolocation
+            usuario.latitude = dto.latitude
+            usuario.longitude = dto.longitude
+            usuario.telefone = dto.telefone
             return await UsuarioRepositorio.save(usuario)
         } catch(err) {
             return Promise.reject(new Error('Usuario não atualizado'));

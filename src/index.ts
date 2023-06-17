@@ -5,8 +5,13 @@ import { AppDataSource } from "./data-source";
 
 const app: Express = express();
 
+app.use(express.json());
+
+
 AppDataSource.initialize().then(() => console.log("Banco inicializado"))
 
-app.use('/', usuarioRouter);
+app.use('/usuario', usuarioRouter);
 
-app.listen(38000, () => console.log("Iniciando"));
+app.use(express.static('public'))
+
+app.listen(39000, () => console.log("Iniciando"));

@@ -8,7 +8,7 @@ const usuarioRouter = Router();
 usuarioRouter.get('/test', (req, res) => {res.send("Tested")});
 
 // Criar Usuario:
-usuarioRouter.post('/', validateRequest({body: UsuarioSchema}), UsuarioController.getInstance().createUsuario);
+usuarioRouter.post('/cadastrar', validateRequest({body: UsuarioSchema}), UsuarioController.getInstance().createUsuario);
 
 // Ler Usuario por ID:
 usuarioRouter.get('/:id', validateRequest({params: UsuarioId}), UsuarioController.getInstance().readUsuarioById);
